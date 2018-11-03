@@ -1,5 +1,6 @@
 class PostsController < ApplicationController
-before_action :find_post, only: [:show, :edit, :update, :destroy]
+  http_basic_authenticate_with name: "Beth", password: "1234", except: [:index, :show]
+  before_action :find_post, only: [:show, :edit, :update, :destroy]
 
   def index
     if params[:category].blank?
