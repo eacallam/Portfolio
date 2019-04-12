@@ -33,6 +33,7 @@ gem 'jbuilder', '~> 2.5'
 gem "bootstrap-sass", '>= 3.4.1'
 gem 'loofah', '~> 2.2.3'
 gem 'jquery-rails'
+gem 'carrierwave'
 gem 'sdoc', '~> 0.4.0', group: :doc
 
 group :development, :test do
