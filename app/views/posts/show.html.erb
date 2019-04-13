@@ -1,4 +1,5 @@
 <h1><%= @post.title %></h1>
+<p class="banner-image"><%= image_tag @post.image_url.to_s %></p>
 <p class="well"><%= @post.content %></p>
 <%= link_to "Edit", edit_post_path(@post), class: 'btn btn-danger'%>
 <%= link_to "Delete", @post, method: :delete, class: 'btn btn-danger', data: { confirm: "Are you sure?" } %>
