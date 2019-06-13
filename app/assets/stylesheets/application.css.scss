@@ -1,8 +1,10 @@
  @import "bootstrap-sprockets";
  @import "bootstrap";
+ @import url('https://fonts.googleapis.com/css?family=PT+Sans|Viga');
 
 body {
   margin-left: 10px;
+  font-family: 'PT Sans', sans-serif;
 }
 
 .banner-image img {
@@ -11,8 +13,19 @@ body {
 
 .navbar {
   margin: -10px;
+  background-color: #F5F5F5;
+}
+
+.navbar-brand {
+  font-family: 'Viga', sans-serif;
+  font-size: 45px;
+  margin-top: 10px;
 }
 
 .form-control {
   width: 60%;
+}
+
+#name {
+  margin-right: -5px;
 }
