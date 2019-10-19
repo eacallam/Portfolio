@@ -1,5 +1,6 @@
 <% @posts.each do |post| %>
   <h2><%= link_to post.title, post %></h2>
-  <%= image_tag post.image_url.to_s %>
-  <p><%= post.content %></p>
+  <%= post.created_at.strftime("%F") %>
+  <p class="banner-image"><%= image_tag post.image_url.to_s %></p>
+  <%= post.content %>
 <% end %>

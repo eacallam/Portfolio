@@ -1,10 +1,19 @@
  @import "bootstrap-sprockets";
  @import "bootstrap";
- @import url('https://fonts.googleapis.com/css?family=PT+Sans|Viga');
+ @import url('https://fonts.googleapis.com/css?family=Fira+Sans|Playfair+Display');
 
 body {
   margin-left: 10px;
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'Fira Sans', sans-serif;
+  color: black;
+}
+
+body a {
+  color: black;
+}
+
+body a:hover {
+  color: black;
 }
 
 .banner-image img {
@@ -13,19 +22,35 @@ body {
 
 .navbar {
   margin: -10px;
-  background-color: #F5F5F5;
+  margin-bottom: 10px;
+  border-bottom: 4px solid black;
+  background-image: url('flowerpattern2.jpg');
+  background-repeat: repeat;
 }
 
 .navbar-brand {
-  font-family: 'Viga', sans-serif;
+  font-family: 'Playfair Display', serif;
+  color: black;
+  font-weight: bold;
   font-size: 45px;
+  text-shadow:
+  -1px -1px 0 #FFF,
+  0   -1px 0 #FFF,
+  1px -1px 0 #FFF,
+  1px  0   0 #FFF,
+  1px  1px 0 #FFF,
+  0    1px 0 #FFF,
+ -1px  1px 0 #FFF,
+ -1px  0   0 #FFF;
   margin-top: 10px;
+  margin-left: -16px;
+}
+
+.navbar-brand a:hover {
+  color: black;
+  font-weight: bold;
 }
 
 .form-control {
   width: 60%;
-}
-
-#name {
-  margin-right: -5px;
 }
